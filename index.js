@@ -56,7 +56,7 @@ const sendMessage = async(data, channelUrl) => {
             data: JSON.stringify(message)
         };
         const result = await (configCreateChannel);
-        return result.data? {error: false, data: result.data}: {error:true, message: "channel not created!"}
+        return result.data? {error: false, data: result.data}: {error:true, message: "message not sent!"}
 }
 
 
